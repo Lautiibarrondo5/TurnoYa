@@ -1,0 +1,1150 @@
+/* VARIABLES Y BASE */
+
+#root {
+  width: 100%;
+}
+
+.app{
+  overflow: hidden;
+  background: #ffffff;
+}
+
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --navy: #0f172a;
+  --text: #1e293b;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --surface: #f8fafc;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--navy);
+  font-family: 'Manrope', sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.logo-icon {
+  display: grid;
+  width: 39px;
+  height: 39px;
+  place-items: center;
+  border-radius: 12px;
+  background: var(--primary);
+  color: white;
+  font-size: 24px;
+}
+
+.logo-highlight {
+  color: var(--primary);
+}
+
+/* ===== BOTONES =====*/
+
+.btn-primary,
+.btn-secondary,
+.btn-login {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 48px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.25s ease;
+}
+
+.btn-primary {
+  padding: 0 22px;
+  border: 1px solid var(--primary);
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.btn-primary {
+  transform: translateY(-2px);
+  border-color: var(--primary-dark);
+  background: var(--primary-dark);
+  box-shadow: 0 8px 20px #2563eb2b;
+}
+
+.btn-secondary {
+  padding: 0 22px;
+  border: 1px solid var(--border);
+  background: white;
+  color: var(--navy);
+}
+
+.btn-secondary {
+  border-color: #93c5fd;
+  background: #eff6ff;
+}
+
+.btn-login {
+  padding: 0 12px;
+  border: none;
+  background: transparent;
+  color: var(--text);
+}
+
+.btn-login {
+  color: var(--primary);
+}
+
+/* NAVEGACIÓN */
+
+.navbar {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  min-height: 86px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 0 8%;
+  border-bottom: 1px solid #f1f5f9;
+  background: #ffffff;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.nav-links a {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.nav-links a {
+  color: var(--primary);
+}
+
+.bav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-nav {
+  min-height: 43px;
+  padding: 0 18px;
+}
+
+/* ===== HERO ===== */
+
+.hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  align-items: center;
+  gap: 65px;
+  min-height: 620px;
+  padding: 80px 10% 95px;
+  background: 
+  radial-gradient(ellipse at 85% 30%, #dbeafe 0%, transparent 43%),
+  linear-gradient(135deg, #ffffff 40%, #f8fbff 100%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 590px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 1px solid #dbeafe;
+  border-radius: 50px;
+  background: #eff6ff;
+  color: var(--primary-dark);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.hero h1,
+.section-heading h2,
+.benefits-content h2,
+.cta-content h2 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  letter-spacing: -2.5px;
+} 
+
+.hero h1 {
+  margin-top: 27px;
+  color: var(--navy);
+  font-size: clamp(42px, 5vw, 65px);
+  line-height: 1.13;
+}
+
+.hero h1 span,
+.section-heading h2 span,
+.benefits-content h2 span {
+  color: var(--primary);
+}
+
+.hero-descripcion {
+  max-width: 490px;
+  margin-top: 23px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  margin-top: 32px;
+}
+
+.hero-trust {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 32px;
+}
+
+.trust-icon {
+  display: grid;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  border-radius: 50%;
+  background: #dcfce7;
+  color: #15803d;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.hero-trust p {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* ===== TARJETA VISUAL DE RESERVA ===== */
+.hero-visual {
+  position: relative;
+  display: flex;
+  min-height: 420px;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-decoration {
+  position: absolute;
+  border: 1px solid #bfdbfe;
+  border-radius: 50%;
+}
+
+.decoration-one {
+  width: 390px;
+  height: 390px;
+}
+
+.decoration-two {
+  width: 320px;
+  height: 320px;
+  border-style: dashed;
+}
+
+.booking-card {
+  position: relative;
+  z-index: 2;
+  width: min(100%, 370px);
+  padding: 27px;
+  border: 1px solid #ffffff;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 25px 70px #1e3a8a17;
+  transform: rotate(-2deg);
+}
+
+.booking-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-overline {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.booking-header h3 {
+  margin-top: 6px;
+  color: var(--navy);
+  font-family: 'Manrope', sans-serif;
+  font-size: 21px;
+}
+
+.calendar-icon {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border-radius: 13px;
+  background: #eff6ff;
+  color: var(--primary);
+  font-size: 25px;
+}
+
+.booking-date {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 28px;
+  padding: 17px;
+  border-radius: 13px;
+  background: #f8fafc;
+}
+
+.date-number {
+  display: grid;
+  width: 57px;
+  height: 57px;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 12px;
+  background: var(--primary);
+  color: #ffffff;
+  font-family: 'Manrope', sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.booking-date div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.booking-date strong {
+  color: var(--navy);
+  font-size: 15px;
+}
+
+.booking-date span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.booking-divider {
+  height: 1px;
+  margin: 23px 0;
+  background: var(--border);
+}
+
+.booking-service {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.service-avatar {
+  display: grid;
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 12px;
+  background: #dbeafe;
+  color: var(--primary-dark);
+  font-size: 21px;
+}
+
+.booking-service-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.booking-service-info strong {
+  color: var(--navy);
+  font-size: 12px;
+}
+
+.booking-service-info span {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.booking-price {
+  color: var(--navy);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.booking-status {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 24px;
+  padding: 12px;
+  border-radius: 9px;
+  background: #f0fdf4;
+  color: #12803d;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+}
+
+.floating-card {
+  position: absolute;
+  right: -40px;
+  bottom: 35px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 15px;
+  border: 1px solid #f1f5f9;
+  border-radius: 13px;
+  background: white;
+  box-shadow: 0 12px 35px #0f172a12;
+  transform: rotate(2deg);
+}
+
+.floating-check {
+  display: grid;
+  width: 35px;
+  height: 35px;
+  place-items: center;
+  border-radius: 50%;
+  background: #dcfce7;
+  color: #15803d;
+  font-weight: 800;
+}
+
+.floating-card div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.floating-card strong {
+  color: var(--navy);
+  font-size: 12px;
+}
+
+.floating-card span {
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.hero-caption {
+  position: absolute;
+  bottom: -18px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.hero-caption span {
+  color: var(--primary);
+  font-size: 20px;
+}
+
+/* ===== FRANJA DE INDICADORES ===== */
+
+.stats-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 31px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: #ffffff;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+}
+
+.stat-icon {
+  display: grid;
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 13px;
+  background: #eff6ff;
+  color: var(--primary);
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.stat-item div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.stat-item strong {
+  color: var(--navy);
+  font-size: 13px;
+}
+
+.stat-item div span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* ===== SERVICIOS ===== */
+
+.services-section {
+  padding: 105px 10%;
+  background: #ffffff;
+}
+
+.section-heading {
+  max-width: 600px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.section-eyebrow {
+  color: var(--primary);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.section-heading h2,
+.benefits-content h2 {
+  margin-top: 17px;
+  color: var(--navy);
+  font-size: clamp(35px, 4vw, 47px);
+  line-height: 1.2;
+}
+
+.section-heading > p {
+  margin-top: 17px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.services-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 320px;
+  padding: 29px;
+  border: 1px solid var(--border);
+  border-radius: 17px;
+  background: white;
+  transition: 0.25s ease;
+}
+
+.service-card {
+  transform: translateY(-6px);
+  border-color: #bfdbfe;
+  box-shadow: 0 20px 40px #0f172a0a;
+}
+
+.service-card-icon {
+  display: grid;
+  width: 55px;
+  height: 55px;
+  place-items: center;
+  border-radius: 15px;
+  font-size: 27px;
+}
+
+.barber-icon {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.beauty-icon {
+  background: #fce7f3;
+  color: #be185d;
+}
+
+.health-icon {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.service-category {
+  margin-top: 24px;
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+.service-card h3 {
+  margin-top: 8px;
+  color: var(--navy);
+  font-family: 'Manrope', sans-serif;
+  font-size: 22px;
+}
+
+.service-card > p {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.service-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 22px;
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.service-link span {
+  font-size: 19px;
+  transition: transform 0.2s ease;
+}
+
+.service-link span{
+  transform: translateX(4px);
+}
+
+/* ===== BENEFICIOS ===== */
+.benefits-section {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  align-items: center;
+  gap: 80px;
+  padding: 100px 12%;
+  background: #f8fafc;
+}
+
+.benefits-content {
+  max-width: 550px;
+}
+
+.benefits-content > p {
+  margin-top: 22px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-top: 32px;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.benefit-item > span {
+  display: grid;
+  width: 27px;
+  height: 27px;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 50%;
+  background: #dbeafe;
+  color: var(--primary-dark);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.benefit-item strong {
+  color: var(--navy);
+  font-size: 14px;
+}
+
+.benefit-item p {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.benefits-button {
+  margin-top: 32px;
+}
+
+.benefits-visual {
+  position: relative;
+  display: grid;
+  min-height: 370px;
+  place-items: center;
+}
+
+.benefits-circle {
+  display: grid;
+  width: min(100%, 320px);
+  aspect-ratio: 1;
+  place-items: center;
+  border: 1px solid #bfdbfe;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #dbeafe, #eff6ff);
+}
+
+.benefits-inner {
+  display: flex;
+  width: 75%;
+  height: 75%;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 20px 60px #1e40af12;
+}
+
+.benefits-clock {
+  color: var(--primary);
+  font-size: 68px;
+  line-height: 1;
+}
+
+.benefits-inner strong {
+  margin-top: 14px;
+  color: var(--navy);
+  font-family: 'Manrope', sans-serif;
+  font-size: 21px;
+}
+
+.benefits-inner > span {
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.benefits-note {
+  position: absolute;
+  right: -15px;
+  bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 17px 20px;
+  border: 1px solid #f1f5f9;
+  border-radius: 13px;
+  background: white;
+  box-shadow: 0 12px 35px #0f172a0a;
+}
+
+.benefits-note > span {
+  color: var(--primary);
+  font-size: 27px;
+}
+
+.benefits-note strong {
+  color: var(--navy);
+  font-size: 12px;
+}
+
+.benefits-note p {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+/* ===== LLAMADA A LA ACCIÓN =====*/
+.cta-section {
+  padding: 85px 8%;
+  background: var(--navy);
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-content > span {
+  color: #93c5fd;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.cta-content h2 {
+  margin-top: 20px;
+  color: white;
+  font-size: clamp(35px, 4vw, 49px);
+  line-height: 1.2;
+}
+
+.cta-content > p {
+  max-width: 510px;
+  margin: 20px auto 0;
+  color: #cbd5e1;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.btn-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  min-height: 51px;
+  margin-top: 30px;
+  padding: 0 24px;
+  border-radius: 10px;
+  background: white;
+  color: var(--navy);
+  font-size: 14px;
+  font-weight: 800;
+  transition: 0.25s ease;
+}
+
+.btn-cta {
+  transform: translateY(-3px);
+  background: #dbeafe;
+}
+
+.btn-cta span {
+  color: var(--primary);
+  font-size: 19px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  display: flex;
+  min-height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 25px 8%;
+  background: white;
+}
+
+.footer-logo {
+  font-size: 21px;
+}
+
+.footer-logo .logo-icon {
+  width: 33px;
+  height: 33px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.footer > p,
+.footer-copy {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* ===== RESPONSIVE: TABLETS ===== */
+@media (mix-width: 1050px) {
+  .navbar {
+    padding: 0 5%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr 0.9fr;
+    gap: 35px;
+    padding-right: 6%;
+    padding-left: 6%;
+  }
+
+  .hero h1 {
+    font-size: 52px;
+  }
+
+  .floating-card {
+    right: -10px;
+  }
+
+  .services-section {
+    padding-right: 6%;
+    padding-left: 6%;
+  }
+
+  .benefits-section {
+    gap: 40px;
+    padding-right: 7%;
+    padding-left: 7%;
+  }
+}
+
+/* ===== RESPONSIVE CELULARES ===== */
+@media (max-width: 760px) {
+  .navbar {
+    min-height: 75px;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 16px 5%;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .logo-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    gap: 25px;
+    padding: 5px 0;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  .nav-actions {
+    gap: 4px;
+  }
+
+  .btn-login {
+    min-height: 38px;
+    padding: 0 7px;
+    font-size: 12px;
+  }
+
+  .btn-nav {
+    min-height: 38px;
+    padding: 0 12px;
+    font-size: 12px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 65px 6% 75px;
+  }
+
+  .hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .hero h1 {
+    font-size: clamp(42px, 9vw, 59px);
+    letter-spacing: -2px;
+  }
+
+  .hero-descripcion {
+    font-size: 14px;
+  }
+
+  .hero-visual {
+    min-height: 410px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 430px;
+  }
+
+  .booking-card {
+    max-width: 350px;
+    padding: 23px;
+  }
+
+  .decoration-one {
+    width: 330px;
+    height: 330px;
+  }
+
+  .decoration-two {
+    width: 275px;
+    height: 275px;
+  }
+
+  .floating-card {
+    right: 0;
+    bottom: 25px;
+  }
+
+  .hero-caption {
+    bottom: -12px;
+  }
+
+  .stats-strip {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 30px 8%;
+  }
+
+  .stat-item {
+    justify-content: flex-start;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .services-section {
+    padding: 75px 6%;
+  }
+
+  .section-heading {
+    margin-bottom: 35px;
+  }
+
+  .section-heading h2,
+  .benefits-content h2 {
+    font-size: 38px;
+    letter-spacing: -1.7px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    max-width: 440px;
+    margin: 0 auto;
+  }
+
+  .service-card {
+    min-height: 290px;
+  }
+
+  .benefits-section {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 75px 7%;
+  }
+
+  .benefits-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .benefits-visual {
+    min-width: 285px;
+  }
+
+  .benefits-note {
+    right: 0;
+    bottom: 0;
+  }
+
+  .cta-section {
+    padding: 70px 6%;
+  }
+
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    padding: 30px 6%;
+    text-align: center;
+  }
+}
+
+/* ===== RESPONSIVE: CELULARES PEQUEÑOS ===== */
+@media (max-widht: 400px) {
+  .navbar {
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+
+  .logo {
+    gap: 7px;
+    font-size: 20px;
+  }
+
+  .nav-actions {
+    gap: 0;
+  }
+
+  .nav-links {
+    gap: 17px;
+  }
+
+  .nav-links a {
+    font-size: 11px;
+  }
+
+  .hero {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+  .herp h1 {
+    font-size: 41px;
+  }
+
+  .hero-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .hero-actions a {
+    width: 100%;
+  }
+
+  .booking-card {
+    padding: 18px;
+  }
+
+  .floating-card {
+    right: -3px;
+    max-width: 240px;
+    padding: 11px;
+  }
+
+  .booking-price {
+    font-size: 11px;
+  }
+
+  .booking-service {
+    gap: 8px;
+  }
+
+  .benefits-note {
+    right: -5px;
+    padding: 13px;
+  }
+}
+
+/* ===== ACCESIBILIDAD: MOVIMIENTO REDUCIDO ===== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01 ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
