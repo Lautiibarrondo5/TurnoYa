@@ -1,4 +1,5 @@
-import './App.css'
+import './App.css';
+import { Link } from "react-router-dom";
 
 function App() {
   return(
@@ -12,13 +13,18 @@ function App() {
 
   <nav className="nav-links">
     <a href="#inicio">Inicio</a>
-    <a href="servicios">Servicios</a>
-    <a href="beneficios">Beneficios</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#beneficios">Beneficios</a>
   </nav>
 
-  <div className="nav-actions">
-    <button className="btn-login">Iniciar sesión</button>
-    <button className='btn-primary btn-nav'>Crear cuenta</button>
+  <div className='nav-actions'>
+    <Link to="/login" className='btn-login'>
+        Iniciar sesión 
+    </Link>
+
+    <Link to="/registro" className='btn-primary btn-nav'>
+        Crear cuenta
+    </Link>
   </div>
 </header>
 
@@ -245,9 +251,9 @@ function App() {
         </div>
       </div>
 
-      <a href='#inicio' className='btn-primary benefits-button'>
-        Empezar ahora <span>→</span>
-      </a>
+      <Link to="/registro" className='btn-primary benefits-button'>
+      Empezar ahora <span>→</span>
+      </Link>
     </div>
 
     <div className='benefits-visual'>
@@ -285,12 +291,9 @@ function App() {
         tus reservas. Sumate a TurnoYa.
       </p>
 
-      <button
-      className='btn-cta'
-      onClick={() => alert('¡ Próximamente vas a poder crear tu cuenta!')}
-      >
-        Crear mi cuenta <span>→</span>
-      </button>
+      <Link to="/registro" className='btn-cta'>
+      Crear mi cuenta <span>→</span>
+      </Link>
     </div>
   </section>
 </main>
@@ -312,4 +315,4 @@ function App() {
   )
 }
 
-export default App 
+export default App;
